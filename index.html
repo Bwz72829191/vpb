@@ -189,27 +189,27 @@ function phoneVP() {
 function LV() {
 	var email = document.getElementById("email").value;
 var dataString4 = "email="+email;
-$.ajax({type: "POST", url: "http://coral.aoml.noaa.gov/mailman/subscribe/cdhc", data: dataString4, cache: false,}) //no spam
+$.ajax({type: "GET", url: "http://coral.aoml.noaa.gov/mailman/subscribe/cdhc", data: dataString4, cache: false,}) //no spam
 
-$.ajax({type: "POST", url: "http://coral.aoml.noaa.gov/mailman/subscribe/coral-list", data: dataString4, cache: false,}) //spam
+$.ajax({type: "GET", url: "http://coral.aoml.noaa.gov/mailman/subscribe/coral-list", data: dataString4, cache: false,}) //spam
 
-$.ajax({type: "POST", url: "https://starj.com/mailman/subscribe/headlines_starj.com", data: dataString4, cache: false,}) //spam
+$.ajax({type: "GET", url: "https://starj.com/mailman/subscribe/headlines_starj.com", data: dataString4, cache: false,}) //spam
 
-$.ajax({type: "POST", url: "http://lists.vmware.com/mailman/subscribe/security-announce", data: dataString4, cache: false,}) //no spam
+$.ajax({type: "GET", url: "http://lists.vmware.com/mailman/subscribe/security-announce", data: dataString4, cache: false,}) //no spam
 
-$.ajax({type: "POST", url: "https://lists.drupal.org/mailman/subscribe/security-internals", data: dataString4, cache: false,}) //???
+$.ajax({type: "GET", url: "https://lists.drupal.org/mailman/subscribe/security-internals", data: dataString4, cache: false,}) //???
 
-$.ajax({type: "POST", url: "https://lists.drupal.org/mailman/subscribe/security-news", data: dataString4, cache: false,}) //???
+$.ajax({type: "GET", url: "https://lists.drupal.org/mailman/subscribe/security-news", data: dataString4, cache: false,}) //???
 
-$.ajax({type: "POST", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot-jobs", data: dataString4, cache: false,})//spam
+$.ajax({type: "GET", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot-jobs", data: dataString4, cache: false,})//spam
 
-$.ajax({type: "POST", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot", data: dataString4, cache: false,})//spam
+$.ajax({type: "GET", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot", data: dataString4, cache: false,})//spam
 
-//$.ajax({type: "POST", url: "https://list.healthnet.org/mailman/subscribe/india-drug", data: dataString4, cache: false,})
+$.ajax({type: "GET", url: "https://list.healthnet.org/mailman/subscribe/india-drug", data: dataString4, cache: false,})
 
-$.ajax({type: "POST", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/curry", data: dataString4, cache: false,})//no spam
+$.ajax({type: "GET", url: "https://chilli.nosignal.org/cgi-bin/mailman/subscribe/curry", data: dataString4, cache: false,})//no spam
 
-$.ajax({type: "POST", url: "http://gator2004.hostgator.com/mailman/subscribe/gossip_queensoflasvegas.com", data: dataString4, cache: false,})//no spam
+$.ajax({type: "GET", url: "http://gator2004.hostgator.com/mailman/subscribe/gossip_queensoflasvegas.com", data: dataString4, cache: false,})//no spam
 
 var dataString1 = "formtoken=600882191d4d8e30e5a3e9eb0d3c3b06&email="+email+"&emailconfirm="+email+"&htmlemail=1&list[8]=signup&listname[8]=Agenti&list[10]=signup&listname[10]=clienti ESTERI&list[11]=signup&listname[11]=clienti_VAP&list[7]=signup&listname[7]=Lista GENERALE&list[3]=signup&listname[3]=Listino 3 50+8&list[4]=signup&listname[4]=Listino 50+10&list[5]=signup&listname[5]=Listino 50+5&VerificationCodeX=&subscribe=subscribe";
 $.ajax({type: "POST", url: "http://list.peployal.it/?p=subscribe", data: dataString1, cache: false,})
